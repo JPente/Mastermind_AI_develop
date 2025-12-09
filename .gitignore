@@ -11,3 +11,6 @@
 
 # directorio mockup
 Mockup/
+
+# archivo .docx
+*.docx
