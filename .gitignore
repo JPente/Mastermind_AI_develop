@@ -1,1 +1,13 @@
-/Mockup
+#Archivos de respaldo
+*.bak
+*.backup
+*~
+
+#archivos de configuracion local
+*.local
+
+#archivos de cache
+.cache/
+
+# directorio mockup
+Mockup/
