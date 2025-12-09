@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ErgoCushion - Inicio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/path1.svg" alt="EcoVida Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-carousel">
+                <div class="slide">
+                    <img src="images/slide1.jpg" alt="Ventaja 1">
+                </div>
+                <div class="slide">
+                    <img src="images/slide2.jpg" alt="Ventaja 2">
+                </div>
+                <div class="slide">
+                    <img src="images/slide3.jpg" alt="Ventaja 3">
+                </div>
+                <div class="slide">
+                    <img src="images/slide4.jpg" alt="Ventaja 4">
+                </div>
+            </div>
+            <div class="hero-content">
+                <h1>Bienvenidos a ErgoCushion</h1>
+                <p>Productos naturales para una vida más saludable y sostenible</p>
+                <a href="productos.html" class="btn-primary">Ver Productos</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <img src="images/icon1.png" alt="Productos Naturales">
+                <h3>100% Natural</h3>
+                <p>Ingredientes puros y sin químicos dañinos</p>
+            </div>
+            <div class="feature">
+                <img src="images/icon2.png" alt="Eco Amigable">
+                <h3>Eco Amigable</h3>
+                <p>Empaques biodegradables y sostenibles</p>
+            </div>
+            <div class="feature">
+                <img src="images/icon3.png" alt="Calidad Garantizada">
+                <h3>Calidad Premium</h3>
+                <p>Productos de la más alta calidad</p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>Email: info@ErgoCushion.com</p>
+                <p>Teléfono: +1 234 567 890</p>
+            </div>
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 ErgoCushion. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

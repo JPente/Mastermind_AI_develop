@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - ErgoCushion</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/path1.svg" alt="ErgoCushion Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html" class="active">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products-header">
+            <h1>Nuestros Productos</h1>
+            <p>Descubre nuestra selección de productos naturales y ecológicos</p>
+        </section>
+
+        <section class="products-grid">
+            <div class="product-card">
+                <img src="images/product1.jpg" alt="Producto 1">
+                <h3>Aceite Esencial de Lavanda</h3>
+                <p>Perfecto para relajación y alivio del estrés</p>
+                <span class="price">$19.99</span>
+                <button class="btn-primary">Añadir al carrito</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/product2.jpg" alt="Producto 2">
+                <h3>Jabón de Miel y Avena</h3>
+                <p>Suaviza y nutre la piel sensible</p>
+                <span class="price">$12.99</span>
+                <button class="btn-primary">Añadir al carrito</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/product3.jpg" alt="Producto 3">
+                <h3>Shampoo Sólido Natural</h3>
+                <p>Limpia sin químicos agresivos</p>
+                <span class="price">$14.99</span>
+                <button class="btn-primary">Añadir al carrito</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/product4.jpg" alt="Producto 4">
+                <h3>Crema Corporal de Coco</h3>
+                <p>Hidratación intensa natural</p>
+                <span class="price">$16.99</span>
+                <button class="btn-primary">Añadir al carrito</button>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <h2>Beneficios de Nuestros Productos</h2>
+            <div class="benefits-grid">
+                <div class="benefit">
+                    <h3>Ingredientes Naturales</h3>
+                    <p>Utilizamos solo los mejores ingredientes naturales en todos nuestros productos.</p>
+                </div>
+                <div class="benefit">
+                    <h3>Libres de Crueldad</h3>
+                    <p>Todos nuestros productos son cruelty-free y nunca son probados en animales.</p>
+                </div>
+                <div class="benefit">
+                    <h3>Envases Ecológicos</h3>
+                    <p>Nuestros empaques son 100% reciclables y biodegradables.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>Email: info@ErgoCushion.com</p>
+                <p>Teléfono: +1 234 567 890</p>
+            </div>
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 ErgoCushion. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
